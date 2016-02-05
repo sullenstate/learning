@@ -1,4 +1,6 @@
-<?php require './includes/copyright.php'; ?>
+<?php
+set_include_path(get_include_path() . PATH_SEPARATOR . '/Applications/MAMP/htdocs/introducingphp/ch07/07_04/includes');
+require 'copyright.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +11,8 @@
 <body>
 <h1>Using the include_path</h1>
 <p>This paragraph is in the original file.</p>
-<?php include './includes/para.html'; ?>
+<?php include 'para.html'; ?>
 <p>This is also in the original file.</p>
-<p><?= lyn_copyright(2015) ;?> David Powers</p>
+<p><?= lyn_copyright(2016) ;?> Tim Klein</p>
 </body>
 </html>

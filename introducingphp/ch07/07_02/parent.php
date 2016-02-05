@@ -1,3 +1,4 @@
+<?php $siteroot = '/introducingphp/ch07/07_03'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,11 @@
 <body>
 <h1>Including External Files</h1>
 <p>This paragraph is in the original file.</p>
+<!-- This links to the end version of para.html -->
+<?php include_once './includes/para_end.html'; ?>
 <p>This is also in the original file.</p>
+<?php include_once './includes/para_end.html'; ?>
+<?php require './includes/copyright.php'; ?>
+<p><?php echo lyn_copyright(2016); ?> Tim Klein</p>
 </body>
 </html>
