@@ -1,3 +1,7 @@
+<?php
+$errors = [];
+$missing = [];
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +12,9 @@
 
 <body>
 <h1>Contact Us</h1>
+<?php if ($errors || $missing) {
+  echo "<p class='warning'>Please fix the item(s) indicated</p>";
+} ?> 
 <form method="post" action="<?= $_SERVER['PHP_SELF']; ?>">
   <p>
     <label for="name">Name:</label>
